@@ -19,18 +19,18 @@
                 //dataJson: topoJsonData
             },
             fills: {
-                'MAJOR': '#306596',
+                'MAJOR': '#E37326',
                 'MEDIUM': '#0fa0fa',
                 'MINOR': '#bada55',
-                defaultFill: '#dddddd'
+                defaultFill: '#ACE2F0'
             },
-            data: {
-                'JH': { fillKey: 'MINOR' },
-                'MH': { fillKey: 'MINOR' }
-            },
+            //data: {
+            //    'JH': { fillKey: 'MINOR' },
+            //    'MH': { fillKey: 'MINOR' }
+            //},
             setProjection: function (element) {
                 var projection = d3.geo.mercator()
-                    .center([78.9629, 23.5937]) // always in [East Latitude, North Longitude]
+                    .center([92.9629, 23.5937]) // always in [East Latitude, North Longitude]
                     .scale(1000);
                 var path = d3.geo.path().projection(projection);
                 return { path: path, projection: projection };
@@ -39,25 +39,60 @@
 
         let bubbles = [
             {
-                latitude: 19.7515,
-                longitude: 75.7139,
+                latitude: 19.07,
+                longitude: 72.87,
                 fillKey: "MAJOR",
-                radius: 20,
-                state: "Maharastra"
+                radius: 15,
+                city: "Mumbai"
             },
             {
-                latitude: 25.7677,
-                longitude: 80.6627,
+                latitude: 28.70,
+                longitude: 77.10,
+                fillKey: "MAJOR",
+                radius: 11,
+                city: "Delhi"
+            },
+            {
+                latitude: 12.97,
+                longitude: 77.59,
+                fillKey: "MAJOR",
+                radius: 19,
+                city: "Bengaluru"
+            },
+            {
+                latitude: 17.38,
+                longitude: 78.4,
                 fillKey: "MAJOR",
                 radius: 22,
-                state: "Uttar Pradesh"
+                city: "Hyderabad"
+            },
+            {
+                latitude: 13.08,
+                longitude: 80.27,
+                fillKey: "MAJOR",
+                radius: 8,
+                city: "Chennai"
+            },
+            {
+                latitude: 22.57,
+                longitude: 88.36,
+                fillKey: "MAJOR",
+                radius: 15,
+                city: "Kolkata"
+            },
+            {
+                latitude: 18.52,
+                longitude: 73.85,
+                fillKey: "MAJOR",
+                radius: 9,
+                city: "Pune"
             }
         ]
         // // ISO ID code for city or <state></state>
         setTimeout(() => { // only start drawing bubbles on the map when map has rendered completely.
             bubble_map.bubbles(bubbles, {
                 popupTemplate: function (geo, data) {
-                    return `<div class="hoverinfo">city: ${data.state}, Slums: ${data.radius}%</div>`;
+                    return `<div class="hoverinfo">City: ${data.city}, Participation: ${data.radius}%</div>`;
                 }
             });
         }, 1000);

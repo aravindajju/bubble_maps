@@ -838,7 +838,148 @@
                             -132
                         ]
                     ]
-                }
+                },
+                {
+                    "type": "Point",
+                    "properties": {
+                        "name": "Delhi"
+                    },
+                    "coordinates": [
+                        3093,
+                        7227
+                    ]
+                },
+                {
+                    "type": "Point",
+                    "properties": {
+                        "name": "Hyderabad"
+                    },
+                    "coordinates": [
+                        3521,
+                        3510
+                    ]
+                },
+                {
+                    "type": "Point",
+                    "properties": {
+                        "name": "Pune"
+                    },
+                    "coordinates": [
+                        1936,
+                        3883
+                    ]
+                },
+                {
+                    "type": "Point",
+                    "properties": {
+                        "name": "Nagpur"
+                    },
+                    "coordinates": [
+                        3730,
+                        4754
+                    ]
+                },
+                {
+                    "type": "Point",
+                    "properties": {
+                        "name": "Jaipur"
+                    },
+                    "coordinates": [
+                        2607,
+                        6650
+                    ]
+                },
+                {
+                    "type": "Point",
+                    "properties": {
+                        "name": "Kanpur"
+                    },
+                    "coordinates": [
+                        4151,
+                        6498
+                    ]
+                },
+                {
+                    "type": "Point",
+                    "properties": {
+                        "name": "Patna"
+                    },
+                    "coordinates": [
+                        5798,
+                        6223
+                    ]
+                },
+                {
+                    "type": "Point",
+                    "properties": {
+                        "name": "Chennai"
+                    },
+                    "coordinates": [
+                        4137,
+                        2089
+                    ]
+                },
+                {
+                    "type": "Point",
+                    "properties": {
+                        "name": "Ahmedabad"
+                    },
+                    "coordinates": [
+                        1501,
+                        5367
+                    ]
+                },
+                {
+                    "type": "Point",
+                    "properties": {
+                        "name": "Surat"
+                    },
+                    "coordinates": [
+                        1590,
+                        4764
+                    ]
+                },
+                {
+                    "type": "Point",
+                    "properties": {
+                        "name": "New Delhi"
+                    },
+                    "coordinates": [
+                        3083,
+                        7203
+                    ]
+                },
+                {
+                    "type": "Point",
+                    "properties": {
+                        "name": "Bangalore"
+                    },
+                    "coordinates": [
+                        3206,
+                        2050
+                    ]
+                },
+                {
+                    "type": "Point",
+                    "id": "MUM",
+                    "properties": {
+                        "name": "Mumbai"
+                    },
+                    "coordinates": [
+                        1596,
+                        4044
+                    ]
+                },
+                {
+                    "type": "Point",
+                    "properties": {
+                        "name": "Kolkata"
+                    },
+                    "coordinates": [
+                        6892,
+                        5191
+                    ]
+                }                
             ]
         },
         "places": {
